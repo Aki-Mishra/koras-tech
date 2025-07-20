@@ -1,0 +1,100 @@
+"use client"
+import Link from "next/link"
+import { useState } from "react"
+import DownArrowicon from "../icons/DownArrowicon"
+import WhatWeDo from "./WhatWeDo"
+import { ActivityIcon } from "lucide-react"
+const MobileMenu = () => {
+    const [isOpen, setisOpen] = useState(false)
+    const [open, setOpen] = useState(false)
+    const [activeIndex, setActiveIndex] = useState(0)
+
+    return (
+        <div className="lg:hidden w-[100%] overflow-hidden">
+            <div className="flex flex-col gap-1 lg:hidden cursor-pointer " onClick={() => { setisOpen(!isOpen) }}>
+                <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] rounded-sm ease-in-out duration-300 `}></div>
+                <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] rounded-sm ease-in-out duration-300 `}></div>
+                <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] rounded-sm ease-in-out duration-300`}></div>
+            </div>
+            {/* Cross Icon */}
+
+
+            <div className={`custom-gradient-background-style py-5 md:py-8 px-4 md:px-12 absolute top-0 flex flex-col  ease-in-out duration-200 lg:hidden text-white h-[100%] w-[100%] ${isOpen ? 'left-0' : "-left-[100%]"}`}>
+                <div className="flex flex-col gap-1 lg:hidden cursor-pointer items-end" onClick={() => { setisOpen(!isOpen) }}>
+                    <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] rounded-sm ease-in-out duration-700 rotate-45 origin-left  `}></div>
+                    <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] rounded-sm ease-in-out duration-700  opacity-0`}></div>
+                    <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] rounded-sm ease-in-out duration-700 -rotate-45 origin-left`}></div>
+                </div>
+                <div className="flex flex-col flex-1 w-full text-base text-white my-12 px-1 font-medium justify-between">
+                    <div className="flex flex-col gap-5  items-center justify-center w-[100%] ">
+                        <div className="flex gap-2 items-center justify-between w-[100%] relative">
+
+                            <Link href="/" className={` hover:bg-[#31D2F2] `}>
+                                What we do
+                                <span className={`ease-in duration-200 h-[1px] bg-[#fff] mt-0.5 block ${activeIndex === 1 ? "w-[100%]" : "w-0"}`}>
+
+                                </span>
+                            </Link>
+                            <div className="rotate-90" onClick={() => { setActiveIndex(1) }}>
+                                <DownArrowicon height={18} width={18} color="white" />
+                            </div>
+                        </div>
+                        <div className="flex gap-2 items-center justify-between w-[100%]">
+
+                            <Link href="/" className="hover:bg-[#31D2F2]">What we are</Link>
+                            <div className="rotate-90">
+                                <DownArrowicon height={16} width={16} color="white" />
+                            </div>
+                        </div>
+                        <div className="flex gap-2 items-center justify-between w-[100%]">
+                            <Link href="/" className="hover:bg-[#31D2F2]">Carrers</Link>
+                            <div className="rotate-90">
+                                <DownArrowicon height={16} width={16} color="white" />
+                            </div>
+                        </div>
+                        <div className="flex gap-2 items-center justify-between w-[100%]">
+                            <Link href="/" className="hover:bg-[#31D2F2]">What we think</Link>
+                            <div className="rotate-90">
+                                <DownArrowicon height={16} width={16} color="white" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-5  items-center justify-end w-[100%]">
+                        <div className="flex gap-2 items-center justify-between w-[100%]">
+
+                            <Link href="/" className="hover:bg-[#31D2F2]">Contact Us </Link>
+
+                        </div>
+                        <div className="flex gap-2 items-center justify-between w-[100%]">
+
+                            <Link href="/" className="hover:bg-[#31D2F2]">Careers</Link>
+
+                        </div>
+
+                    </div>
+                    {/* for Social Media Icons */}
+                    <div className=""></div>
+                </div>
+            </div>
+            <div className={`custom-gradient-background-style py-5 md:py-8 px-4 md:px-12 absolute top-0 flex flex-col  ease-in-out duration-500 lg:hidden text-white h-[100%] w-[100%] ${activeIndex === 1 ? 'left-0' : "-left-[100%]"}`}>
+                {/* back button */}
+                <div className="flex  gap-1 lg:hidden cursor-pointer items-center" onClick={() => { setActiveIndex(0) }} >
+                    <div className="-rotate-90">
+                        <DownArrowicon height={20} width={20} color="white" />
+                    </div>
+                    <div className="">
+                        <p>Back</p>
+                    </div>
+
+                </div>
+                <WhatWeDo />
+
+            </div>
+
+
+        </div>
+    )
+}
+
+export default MobileMenu
