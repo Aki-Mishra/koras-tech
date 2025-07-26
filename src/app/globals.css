@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @import "tw-animate-css";
@@ -170,6 +170,12 @@
 .custom-poppins-font {
   font-optical-sizing: auto;
       font-family: "Roboto", sans-serif;
+}
+.custom-times-new-roman-font{
+  font-family: "Libre Baskerville", serif;
+}
+.custom-neavy-blue-font{
+  color: #0A1A2E !important;
 }
 
 .custom-gradient-background-style {

@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="primary-dark">
   
-      <body className=" mx-4 md:mx-12 sm:mx-4 lg:mx-16 xl:mx-20 2xl:mx-32 bg-[#fff0]">
+      <body className="text-white bg-[#fff0]">
         <Navbar/>
 
         {children}
