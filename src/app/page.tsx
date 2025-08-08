@@ -5,33 +5,33 @@ export default function Home() {
   return (
     // hero section
     <>
-      <div id="hero-section" className="flex flex-col ml-7   md:ml-9 pb-12 lg:ml-7 xl:ml-[10vw] md:mt-28 lg:mt-32 custom-poppins-font lg:flex-row gap-16">
+      <div id="hero-section" className="relative flex flex-col pl-7   md:pl-9 pb-12 lg:pl-7 xl:pl-[10vw] md:mt-28 lg:mt-32 custom-poppins-font lg:flex-row gap-0">
 
         <div className=" pr-3 ">
-          <div className="text-[2.5rem] lg:text-4xl mb-8 tracking-tighter max-w-[30ch] lg:max-w-[25ch]">
-            <h1 className="text-[2.5rem] lg:text-4xl leading-[3rem] font-bold tracking-wide">Empowering <span className="custom-text-sky-blue italic">Innovation</span> Innovation Through <span className="custom-text-sky-blue italic"> Technology </span></h1>
+          <div className="text-[2.5rem] lg:text-4xl mb-8 tracking-tighter max-w-[30ch] lg:max-w-[45ch] xl:max-w[41ch]">
+            <h1 className="text-[2.1rem] md:text-[2.5rem] xl:text-[3rem] lg:text-4xl leading-[2.9rem] font-bold tracking-wide text-left">Smart <span className=" custom-text-sky-blue">IT</span>  solutions designed to power today’s <span className="uppercase custom-text-sky-blue"> innovation </span> and tomorrow’s growth.</h1>
           </div>
           <div className="text-[16px] max-w-[30em]">
-            <p className="tracking-wide text-[16px]">We help startups, businesses, and enterprises build scalable apps, streamline processes, and accelerate digital growth with expert tech solutions tailored to your goals.</p>
+            <p className="tracking-wide text-[16px]">Your tech partner in progress. Koras Technology builds, secures, and scales your digital edge.</p>
           </div>
-          <div className="mt-8">
+          {/* <div className="mt-8">
             <button className="bg-[#31D2F2] hover:bg-[#29B8DB] px-6 py-3 text-xl font-bold ease-in duration-75 border-2 border-white" >Contact us</button>
-          </div>
+          </div> */}
         </div>
 
         <div className="relative flex-1 ">
           <div className="relative  flex justify-end">
-            <img src="/image/korasHeroBackground.png" alt="" className="w-[75%] lg:w-[100%] xl:w-[60%] " />
+            <img src="/image/Group_14.png" alt="" className="opacity-0 w-[85%] md:w-[75%] lg:w-[100%] xl:w-[100%] " />
 
           </div>
         </div>
 
-
+       
       </div>
       {/* What we do section  */}
       <div className="bg-white text-[#343a40] custom-poppins-font px-7 py-16 md:px-9 lg:px-19 ">
         {/* top section for heading and description */}
-        <div className="mb-20 flex flex-col md:flex-row  md:gap-20">
+        <div className="mb-12 flex flex-col md:flex-row  md:gap-20">
           {/* heading section */}
           <div className="mb-4">
             <h5 className="uppercase mb-4 text-[17px] leading-4">What we do</h5>
@@ -46,107 +46,100 @@ export default function Home() {
           <div className="pt-8 border-b-1 border-[#a0a7ae]">
             {/* SERVICE */}
             <p className="text-xl font-bold w-fit group custom-neavy-blue-font">
-              Application Develpoment
+              Application Development and Maintenance
               {/* underline */}
               <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
             </p>
 
-
             {/* description */}
-            <p className="font-light mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, est?</p>
+            <p className="font-light mb-4">Building and maintaining reliable applications to support your business.</p>
           </div>
           <div className="pt-8 border-b-1 border-[#a0a7ae]">
             {/* SERVICE */}
             <p className="text-xl font-bold w-fit group custom-neavy-blue-font">
-              Application Develpoment
+              IT Services & Consulting
               {/* underline */}
               <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
             </p>
-
-
             {/* description */}
-            <p className="font-light mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, est?</p>
+            <p className="font-light mb-4">Expert IT solutions and strategic consulting to drive business growth.</p>
           </div>
           <div className="pt-8 border-b-1 border-[#a0a7ae]">
             {/* SERVICE */}
             <p className="text-xl font-bold w-fit group custom-neavy-blue-font">
-              Application Develpoment
+              Cloud Solutions
               {/* underline */}
               <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
             </p>
-
-
             {/* description */}
-            <p className="font-light mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, est?</p>
+            <p className="font-light mb-4">Scalable and secure cloud services for modern business needs.</p>
           </div>
           <div className="pt-8 border-b-1 border-[#a0a7ae]">
             {/* SERVICE */}
             <p className="text-xl font-bold w-fit group custom-neavy-blue-font">
-              Application Develpoment
+              Cybersecurity Services
               {/* underline */}
               <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
             </p>
-
-
             {/* description */}
-            <p className="font-light mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, est?</p>
+            <p className="font-light mb-4">Protecting your digital assets with advanced security solutions.</p>
           </div>
           <div className="pt-8 border-b-1 border-[#a0a7ae]">
             {/* SERVICE */}
             <p className="text-xl font-bold w-fit group custom-neavy-blue-font">
-              Application Develpoment
+              Data Analytics & Insights
+
               {/* underline */}
               <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
             </p>
 
 
             {/* description */}
-            <p className="font-light mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, est?</p>
+            <p className="font-light mb-4">Turning data into actionable business intelligence.</p>
           </div>
           <div className="pt-8 border-b-1 border-[#a0a7ae]">
             {/* SERVICE */}
             <p className="text-xl font-bold w-fit group custom-neavy-blue-font">
-              Application Develpoment
+              UI/UX Design
               {/* underline */}
               <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
             </p>
 
 
             {/* description */}
-            <p className="font-light mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, est?</p>
+            <p className="font-light mb-4">Creating intuitive and engaging user experiences.</p>
           </div>
           <div className="pt-8 border-b-1 border-[#a0a7ae]">
             {/* SERVICE */}
             <p className="text-xl font-bold w-fit group custom-neavy-blue-font">
-              Application Develpoment
+              E-commerce Development
               {/* underline */}
               <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
             </p>
 
 
             {/* description */}
-            <p className="font-light mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, est?</p>
+            <p className="font-light mb-4">Building powerful online stores for seamless shopping experiences.</p>
           </div>
           <div className="pt-8 border-b-1 border-[#a0a7ae]">
             {/* SERVICE */}
             <p className="text-xl font-bold w-fit group custom-neavy-blue-font">
-              Application Develpoment
+              Internet of Things (IoT)
               {/* underline */}
               <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
             </p>
 
-
             {/* description */}
-            <p className="font-light mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, est?</p>
+            <p className="font-light mb-4">Connecting devices to enable smart, data-driven operations.</p>
           </div>
 
-  
-          
+
+
         </div>
       </div>
       {/* contact section */}
-      <ContactUs/>
-      
+      <ContactUs />
+
     </>
 
   );

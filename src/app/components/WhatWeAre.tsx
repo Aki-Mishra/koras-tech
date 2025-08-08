@@ -28,13 +28,13 @@ const WhatWeDo = () => {
                     </div>
                     <div className={`overflow-hidden transition-all duration-500 ease-in-out ${capabalitiesOpen ? "max-h-[2000px] " : "max-h-0 " } md:max-h-[2000px]`}>
                         <ul className="list-none text-sm md:text-base lg:text-sm font-medium mx-2 lg:mt-2  md:mx-0 my-6 lg:max-h-[calc(70vh-200px)] lg:grid lg:grid-cols-2 lg:grid-rows-10 lg:gap-x-5 lg:gap-y-0 lg:mb-12">
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Our Mission & Vision</li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Leadership Team</li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Partnerships & Alliances</li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Achievements & Milestones </li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Client-Centric Approach</li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Our Journey</li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Future Goals </li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Our Mission & Vision</li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Leadership Team</li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Partnerships & Alliances</li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Achievements & Milestones </li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Client-Centric Approach</li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Our Journey</li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Future Goals </li>
                           
                         </ul>
                     </div>
@@ -50,13 +50,13 @@ const WhatWeDo = () => {
 
                     </div>
                     <div className={`overflow-hidden transition-all duration-500 ease-in-out md:max-h-[2000px] ${industriesOpen ? "max-h-[2000px] " : "max-h-0 " }`}>
-                      <ul className="list-none text-sm md:text-base lg:text-sm font-medium mx-2 lg:mt-2  md:mx-0 my-6 lg:max-h-[calc(70vh-200px)] lg:grid lg:grid-cols-2 lg:grid-rows-10 lg:gap-x-5 lg:gap-y-0 lg:mb-12">
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Client-Centric Methodology</li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">End-to-End Delivery Model</li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Dedicated Teams</li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Collaborative Process</li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Custom Solutions</li>
-                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:underline">Communication & Transparency</li>
+                      <ul className="list-none text-sm md:text-base lg:text-md font-medium mx-2 lg:mt-2  md:mx-0 my-6 lg:max-h-[calc(70vh-200px)] lg:grid lg:grid-cols-2 lg:grid-rows-10 lg:gap-x-5 lg:gap-y-0 lg:mb-12">
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Client-Centric Methodology</li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">End-to-End Delivery Model</li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Dedicated Teams</li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Collaborative Process</li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Custom Solutions</li>
+                            <li className="py-4 px-3 underline-offset-4 md:py-2 md:px-0 hover:text-[#31D2F2]">Communication & Transparency</li>
                           
                         </ul>
                     </div>

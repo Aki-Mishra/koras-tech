@@ -21,7 +21,7 @@ const MobileMenu = () => {
             {/* Cross Icon */}
 
 
-            <div className={`z-100 custom-gradient-background-style py-5 md:py-8 px-4 md:px-12 absolute top-0 flex flex-col  ease-in-out duration-200 lg:hidden text-white h-full w-[100%] ${isOpen ? 'left-0' : "-left-[100%]"}`}>
+            <div className={`z-11 custom-gradient-background-style py-5 md:py-8 px-4 md:px-12 absolute top-0 flex flex-col  ease-in-out duration-200 lg:hidden text-white h-full w-[100%] ${isOpen ? 'left-0' : "-left-[100%]"}`}>
                 <div className="flex flex-col gap-1 lg:hidden cursor-pointer items-end" onClick={() => { setisOpen(!isOpen) }}>
                     <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] ease-in-out duration-700 rotate-45 origin-left  `}></div>
                     <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] ease-in-out duration-700  opacity-0`}></div>
@@ -80,7 +80,7 @@ const MobileMenu = () => {
                     <div className=""></div>
                 </div>
             </div>
-            <div className={`custom-gradient-background-style py-5 md:py-8 px-4 md:px-12 absolute top-0 flex flex-col  ease-in-out duration-500 lg:hidden text-white h-auto min-h-[100%] w-[100%] ${[1, 2, 3].includes(activeIndex)? 'left-0' : "-left-[100%]"}`}>
+            <div className={`z-12 custom-gradient-background-style py-5 md:py-8 px-4 md:px-12 absolute top-0 flex flex-col  ease-in-out duration-500 lg:hidden text-white h-auto min-h-[100%] w-[100%] ${[1, 2, 3].includes(activeIndex)? 'left-0' : "-left-[100%]"}`}>
                 {/* back button */}
                 <div className="flex  gap-1 lg:hidden cursor-pointer items-center" onClick={() => { setActiveIndex(0) }} >
                     <div className="-rotate-90">
