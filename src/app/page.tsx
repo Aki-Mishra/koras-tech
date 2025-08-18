@@ -1,37 +1,24 @@
 import Image from "next/image";
 import ContactUs from "./components/ContactUs";
+import ImageSlider from "./components/ImageSlider";
+import Projects from "./components/Projects";
+import Leadership from "./components/Leadership";
+import CustomerReview from "./components/CustomerReview"
+import HeroSection from "./components/HeroSection";
 
 export default function Home() {
+
+
+
   return (
     // hero section
     <>
-      <div id="hero-section" className="relative flex flex-col pl-7   md:pl-9 pb-12 lg:pl-7 xl:pl-[10vw] md:mt-28 lg:mt-32 custom-poppins-font lg:flex-row gap-0">
-
-        <div className=" pr-3 ">
-          <div className="text-[2.5rem] lg:text-4xl mb-8 tracking-tighter max-w-[30ch] lg:max-w-[45ch] xl:max-w[41ch]">
-            <h1 className="text-[2.1rem] md:text-[2.5rem] xl:text-[3rem] lg:text-4xl leading-[2.9rem] font-bold tracking-wide text-left">Smart <span className=" custom-text-sky-blue">IT</span>  solutions designed to power today’s <span className="uppercase custom-text-sky-blue"> innovation </span> and tomorrow’s growth.</h1>
-          </div>
-          <div className="text-[16px] max-w-[30em]">
-            <p className="tracking-wide text-[16px]">Your tech partner in progress. Koras Technology builds, secures, and scales your digital edge.</p>
-          </div>
-          {/* <div className="mt-8">
-            <button className="bg-[#31D2F2] hover:bg-[#29B8DB] px-6 py-3 text-xl font-bold ease-in duration-75 border-2 border-white" >Contact us</button>
-          </div> */}
-        </div>
-
-        <div className="relative flex-1 ">
-          <div className="relative  flex justify-end">
-            <img src="/image/Group_14.png" alt="" className="opacity-0 w-[85%] md:w-[75%] lg:w-[100%] xl:w-[100%] " />
-
-          </div>
-        </div>
-
-       
-      </div>
+    <HeroSection/>
+   
       {/* What we do section  */}
       <div className="bg-white text-[#343a40] custom-poppins-font px-7 py-16 md:px-9 lg:px-19 ">
         {/* top section for heading and description */}
-        <div className="mb-12 flex flex-col md:flex-row  md:gap-20">
+        <div className="mb-12 flex flex-col md:flex-row  md:gśap-20">
           {/* heading section */}
           <div className="mb-4">
             <h5 className="uppercase mb-4 text-[17px] leading-4">What we do</h5>
@@ -137,8 +124,12 @@ export default function Home() {
 
         </div>
       </div>
+      <Projects />
       {/* contact section */}
       <ContactUs />
+      {/* projects section */}
+      <CustomerReview/>
+      <Leadership />
 
     </>
 

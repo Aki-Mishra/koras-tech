@@ -55,7 +55,7 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="">
-                  <Link href={""}>
+                  <Link href={"https://www.facebook.com/share/1AGsv6csp4/"}>
                     <FacebookLogo height={30} width={30} />
                   </Link>
                 </div>

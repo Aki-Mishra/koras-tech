@@ -6,18 +6,21 @@ import Link from "next/link"
 import DownArrowicon from "../icons/DownArrowicon"
 const Navbar = () => {
     return (
-        <div className="custom-gradient-background-style border-b-[1px] border-b-[#31d2f2]  z-10 mb-12 pb-3 flex items-center justify-between pt-2 mx-4 md:mx-6 sm:mx-4 lg:mx-0 pl-3 pr-3 lg:px-36 xl:px-40 2xl:px-52  custom-poppins-font lg:h-[72px] h:[64px]">
+        <div className="bg-white   z-10  flex items-center justify-between  lg:px-0 lg:pt-0 pt-2.5 custom-poppins-font lg:h-[72px] h:[64px] ">
             {/* left */}
-            <div className="flex items-center">
-                <KorasLogo height={50} width={103} color="white" />
+            <div className="flex items-center bg-white p-2.5 pl-7 md:pl-9 lg:pl-19 lg:w-[20%] lg:h-full">
+                <KorasLogo height={50} width={104} color="white" />
             </div>
-            {/* center */}
-                <Menu />
+            <div className="lg:bg-[#0A1A2E] lg:flex  justify-center items-center lg:flex-1 rounded-bl-xl lg:h-full">
+                {/* center */}
+                <div className=" pt-2.5  hidden lg:flex items-center">
+                    <Menu />
+                </div>
 
-
-            {/* right */}
-            <div className="">
-                <MobileMenu /> 
+                {/* right */}
+                <div className="pt-2.5 pr-7 md:pr-9 lg:pr-19 lg:hidden">
+                    <MobileMenu />
+                </div>
             </div>
         </div>
     )

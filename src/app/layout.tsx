@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./css/slider.css"
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="primary-dark">
+    <html lang="en" >
   
       <body className="text-white bg-[#fff0]">
         <Navbar/>

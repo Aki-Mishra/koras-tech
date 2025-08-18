@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import DownArrowicon from "../icons/DownArrowicon"
 import WhatWeDo from "./WhatWeDo"
 import { ActivityIcon } from "lucide-react"
@@ -12,17 +12,17 @@ const MobileMenu = () => {
     const [activeIndex, setActiveIndex] = useState(0)
 
     return (
-        <div className="z-100 lg:hidden w-[100%] overflow-hidden   ">
+        <div className="z-10 lg:hidden w-[100%] overflow-hidden   ">
             <div className="flex flex-col gap-1 lg:hidden cursor-pointer " onClick={() => { setisOpen(!isOpen) }}>
-                <div className={`top h-1 border-2 border-white w-6 bg-[#fff] hover:bg-[#31D2F2]  ease-in-out duration-300 `}></div>
-                <div className={`top h-1 border-2 border-white w-6 bg-[#fff] hover:bg-[#31D2F2]  ease-in-out duration-300 `}></div>
-                <div className={`top h-1 border-2 border-white w-6 bg-[#fff] hover:bg-[#31D2F2] ease-in-out duration-300`}></div>
+                <div className={`top h-1 border-2 border-[#0A1A2E] w-6 primary-dark lg:bg-[#fff]  hover:bg-[#31D2F2]  ease-in-out duration-300 `}></div>
+                <div className={`top h-1 border-2 border-[#0A1A2E] w-6 primary-dark lg:bg-[#fff] hover:bg-[#31D2F2]  ease-in-out duration-300 `}></div>
+                <div className={`top h-1 border-2 border-[#0A1A2E] w-6 primary-dark lg:bg-[#fff] hover:bg-[#31D2F2] ease-in-out duration-300`}></div>
             </div>
             {/* Cross Icon */}
 
 
-            <div className={`z-11 custom-gradient-background-style py-5 md:py-8 px-4 md:px-12 absolute top-0 flex flex-col  ease-in-out duration-200 lg:hidden text-white h-full w-[100%] ${isOpen ? 'left-0' : "-left-[100%]"}`}>
-                <div className="flex flex-col gap-1 lg:hidden cursor-pointer items-end" onClick={() => { setisOpen(!isOpen) }}>
+            <div className={`z-12 custom-gradient-background-style py-2.5  md:py-8 px-4 md:px-12 absolute top-0 flex flex-col  ease-in-out duration-200 lg:hidden text-white h-full w-[100%] ${isOpen ? 'left-0' : "-left-[100%]"}`}>
+                <div className=" pt-5 pr-2.5 flex flex-col gap-1 lg:hidden cursor-pointer items-end" onClick={() => { setisOpen(!isOpen) }}>
                     <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] ease-in-out duration-700 rotate-45 origin-left  `}></div>
                     <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] ease-in-out duration-700  opacity-0`}></div>
                     <div className={`top h-1 w-6 bg-[#fff] hover:bg-[#31D2F2] ease-in-out duration-700 -rotate-45 origin-left`}></div>
@@ -64,11 +64,7 @@ const MobileMenu = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-5  items-center justify-end w-[100%]">
-                        <div className="flex gap-2 items-center justify-between w-[100%]">
-
-                            <Link href="/" className="hover:bg-[#31D2F2]">Contact Us </Link>
-
-                        </div>
+                     
                         <div className="flex gap-2 items-center justify-between w-[100%]">
 
                             <Link href="/" className="hover:bg-[#31D2F2]">Careers</Link>

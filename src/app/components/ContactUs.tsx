@@ -3,7 +3,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <div  id="contatUs" className="flex flex-col lg:flex-row px-7 md:px-9 py-7 custom-poppins-font mb-[10rem] lg:pt-15" >
+      <div id="contatUs" className="flex flex-col lg:flex-row px-7 md:px-9 lg:px-19 py-7 custom-poppins-font pb-[10rem] lg:pt-15 primary-dark" >
         <div className="w-full lg:w-[50%]">
           <div className="w-full flex justify-between items-center mb-[1rem] md:text-[1.875rem]">
             <h1 className="capitalize font-extralight text-[2.5rem] ">Contact Us </h1>
@@ -16,17 +16,17 @@ const ContactUs = () => {
           <p className="custom-text-sky-blue font-bold mb-4 lg:text-[1.125rem] pr-[5rem]"> Let's reinvent the future</p>
         </div>
         <div className="mt lg:w-[50%] flex-1">
-          <form action="">
+          <form action="https://formspree.io/f/mrblvqoj" method="POST">
             {/* for name and last name */}
             <div className="flex flex-col lg:flex-row gap-10 w-full">
               {/* name */}
-              <div className="relative w-full pt-[1.85rem]">
-                <input type="mail" className="peer w-full border-b-2 border-white  py-[0.375rem] text-[1rem] outline-none h-10" placeholder=" " />
+              <div className="relative w-full pt-[1.85rem] ">
+                <input type="text" className="peer w-full border-b-2 border-white  py-[0.375rem] text-[1rem] outline-none h-10" placeholder=" " name="firstName" required/>
                 <p className=" peer-focus:top-[12px] peer-placeholder-shown:top-[calc(100%-31px)] top-[12px] capitalize absolute left-0  text-[1rem] ease-in duration-200">First Name</p>
               </div>
               {/* last name */}
               <div className="relative w-full pt-[1.85rem]">
-                <input type="mail" className="peer w-full border-b-2 border-white  py-[0.375rem] text-[1rem] outline-none h-10" placeholder=" " />
+                <input type="text" className="peer w-full border-b-2 border-white  py-[0.375rem] text-[1rem] outline-none h-10" placeholder=" " name="lastName"  required/> 
                 <p className=" peer-focus:top-[12px] peer-placeholder-shown:top-[calc(100%-31px)] top-[12px] capitalize absolute left-0  text-[1rem] ease-in duration-200">Last Name</p>
               </div>
             </div>
@@ -34,7 +34,7 @@ const ContactUs = () => {
             <div className="flex flex-col lg:flex-row gap-10 w-full">
               {/* work email */}
               <div className="relative w-full pt-[1.85rem]">
-                <input type="mail" className="peer w-full border-b-2 border-white  py-[0.375rem] text-[1rem] outline-none h-10" placeholder=" " />
+                <input type="mail" className="peer w-full border-b-2 border-white  py-[0.375rem] text-[1rem] outline-none h-10" placeholder=" " name="email" required />
                 <p className=" peer-focus:top-[12px] peer-placeholder-shown:top-[calc(100%-31px)] top-[12px] capitalize absolute left-0  text-[1rem] ease-in duration-200">Work Email</p>
               </div>
               {/* job title */}
@@ -62,13 +62,13 @@ const ContactUs = () => {
             <div className="flex flex-col lg:flex-row gap-10 w-full">
               {/* company name  */}
               <div className="relative w-full pt-[1.85rem]">
-                <input type="mail" className="peer w-full border-b-2 border-white  py-[0.375rem] text-[1rem] outline-none h-10" placeholder=" " />
+                <input type="text" className="peer w-full border-b-2 border-white  py-[0.375rem] text-[1rem] outline-none h-10" placeholder=" " name="companyName" required />
                 <p className=" peer-focus:top-[12px] peer-placeholder-shown:top-[calc(100%-31px)] top-[12px] capitalize absolute left-0  text-[1rem] ease-in duration-200">Company Name</p>
               </div>
               {/* industry */}
               <div className="w-full pt-[1.85rem] relative group">
 
-                <select name="job-title" id="" className="peer border-b-2 w-full  py-[0.375rem] text-[1rem] outline-none h-10" required >
+                <select  id="" className="peer border-b-2 w-full  py-[0.375rem] text-[1rem] outline-none h-10" name="industry" required >
                   <option value=""></option>
                   <option value="Information_Technology" className="text-black ">Information Technology</option>
                   <option value="Healthcare" className="text-black ">Healthcare</option>
@@ -99,7 +99,7 @@ const ContactUs = () => {
             </div>
             {/* for country */}
             <div className="w-full pt-[1.85rem] relative group">
-              <select name="job-title" id="" className="peer border-b-2 w-full  py-[0.375rem] text-[1rem] outline-none h-10" required >
+              <select id="" className="peer border-b-2 w-full  py-[0.375rem] text-[1rem] outline-none h-10" required name="country" >
                 <option value="" className="text-black"></option>
                 <option value="AU" className="text-black">Australia</option>
                 <option value="BR" className="text-black">Brazil</option>
@@ -129,7 +129,7 @@ const ContactUs = () => {
             </div>
             {/* for how we can hel u  */}
             <div className="w-full pt-[1.85rem] relative group">
-              <select name="job-title" id="" className="peer border-b-2 w-full  py-[0.375rem] text-[1rem] outline-none h-10" required >
+              <select  id="" className="peer border-b-2 w-full  py-[0.375rem] text-[1rem] outline-none h-10" required name="how_we_can_help_you" >
                 <option value="" className="text-black"></option>
                 <option value="New Bussiness" className="text-black">New Bussiness</option>
                 <option value="Want_to_work_at_koras" className="text-black">Want to work at Koras</option>
@@ -143,12 +143,12 @@ const ContactUs = () => {
             <div className=" w-full pt-[1.85rem]">
               {/* <input type="mail" className="peer w-full border-b-2 border-white  py-[0.375rem] text-[1rem] outline-none" placeholder=" " /> */}
 
-              <p className=" capitalize  left-0  text-[1rem] ease-in duration-200 pb-[0.625rem] text-[#d1d3ca]">Message</p>
-              <textarea name="message" id="" className="peer w-full border-2 border-white  p-[0.625rem] text-[1rem] outline-none h-[180px]" ></textarea>
+              <p className=" capitalize  left-0  text-[1rem] ease-in duration-200 pb-[0.625rem] text-[#d1d3ca]" >Message</p>
+              <textarea  id="" className="peer w-full border-2 border-white  p-[0.625rem] text-[1rem] outline-none h-[180px]" name="message" placeholder=" "  required></textarea>
             </div>
             {/* term and conditons */}
             <div className="flex w-full pt-[1.85rem] items-center ">
-              <input type="checkbox" className="peer  border-b-2 border-white   text-[1rem] outline-none bg-transparent mr-2" />
+              <input type="checkbox" className="peer  border-b-2 border-white   text-[1rem] outline-none bg-transparent mr-2" required/>
               <p className=" capitalize  left-0  text-[1rem] ease-in duration-200  text-[#d1d3ca] ">Term and Contionditions</p>
             </div>
             {/* submit */}
