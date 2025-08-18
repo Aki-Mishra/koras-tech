@@ -55,7 +55,7 @@ export default function Slider() {
     const [current, setCurrent] = useState(0);
     const length = customers.length;
     const [direction, setDirection] = useState("next");
-    const [prevIndex, setPrevIndex] = useState(null);
+    const [prevIndex, setPrevIndex] = useState(Number);
 
     function setState(newIndex: any, dir: any) {
         setPrevIndex(current);
