@@ -8,10 +8,10 @@ import Carrers from "./Carrers"
 const Menu = () => {
     const [isRotated, setisRotated] = useState(false)
     const [activeIndex, setActiveIndex] = useState(0)
-    const menuRef = useRef(null)
+    const menuRef = useRef<HTMLDivElement>(null)
     useEffect(() => {
-        const handleClickOutside = (e) => {
-            if (menuRef.current && !menuRef.current.contains(e.target)) {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
                 setActiveIndex(0)
             }
         }

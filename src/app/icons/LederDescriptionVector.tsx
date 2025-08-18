@@ -1,5 +1,5 @@
 
-const LederDescriptionVector = ({ width }: { widht: number | string }) => {
+const LederDescriptionVector = ({ width }: { width: number | string }) => {
     const height = typeof (width) === 'number' ? width / 1.2: ""
 
     return (

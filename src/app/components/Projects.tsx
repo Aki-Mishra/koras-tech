@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           src={project.imageUrl}
           alt={project.title}
           className="rounded-t-xl w-full h-48 object-cover"
-          onError={(e) => { e.target.src = 'https://placehold.co/600x400/1a233b/ffffff?text=Image+Load+Error'; }}
+          onError={(e) => { const target = e.target as HTMLImageElement; target.src = 'https://placehold.co/600x400/1a233b/ffffff?text=Image+Load+Error'; }}
         />
         <div className="p-6">
           <h3 className="text-xl font-bold text-[#1a233b] mb-2">{project.title}</h3>
