@@ -69,12 +69,12 @@ const HeroSection = () => {
 
       {/* Text Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center z-20">
-        <p className="text-2xl md:text-4xl font-bold text-white drop-shadow-lg">
+        <p className="text-2xl md:text-4xl font-bold text-white drop-shadow-lg uppercase inter-font">
           Koras Technology
         </p>
 
         <h1
-          className={`mt-4 text-3xl md:text-5xl lg:text-[3rem] font-bold text-white drop-shadow-2xl leading-snug transition-all duration-700 ${
+          className={ `inter-font capitalize mt-4 text-3xl md:text-5xl lg:text-[3rem] font-bold text-white drop-shadow-2xl leading-snug transition-all duration-700  inter-font${
             fade ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"
           }`}
         >
@@ -82,7 +82,7 @@ const HeroSection = () => {
         </h1>
 
         <p
-          className={`mt-4 text-lg sm:text-xl md:text-2xl lg:text-[1.8rem] text-white/90 drop-shadow-lg max-w-3xl transition-all duration-700 delay-200 ${
+          className={`capitalize mt-4 text-lg sm:text-xl md:text-2xl lg:text-[1.8rem] text-white/90 drop-shadow-lg max-w-3xl transition-all duration-700 delay-200 inter-font ${
             fade ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
           }`}
         >
@@ -90,7 +90,7 @@ const HeroSection = () => {
         </p>
 
         <div className="mt-8">
-          <button className="px-8 py-3 font-bold text-lg md:text-xl rounded-md bg-gradient-to-r from-[#31D2F2] to-[#00E6FF] text-white shadow-lg hover:from-[#00E6FF] hover:to-[#31D2F2] transition-all duration-500 transform hover:scale-105">
+          <button  className="inter-font px-8 py-3 font-bold text-lg md:text-xl rounded-md bg-gradient-to-r from-[#31D2F2] to-[#00E6FF] text-white shadow-lg hover:from-[#00E6FF] hover:to-[#31D2F2] transition-all duration-500 transform hover:scale-105">
             Contact Us
           </button>
         </div>

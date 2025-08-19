@@ -79,7 +79,7 @@ export default function Slider() {
 
     return (
         <div className="relative flex   w-full overflow-hidden bg-[linear-gradient(to_bottom,rgba(49,210,242,0.1)_75%,rgba(49,210,242,0.3)_100%)] lg:bg-[linear-gradient(to_bottom,rgba(49,210,242,0.12)_0%,rgba(49,210,242,0.12)_80%,rgba(49,210,242,0.3)_100%)] h-[670px] md:h-[875px] lg:h-[900px] max-h-[100vh] " id="customer-review">
-            <h1 className="text-black text-[2.5rem] font-semibold px-7 md:px-9 lg:px-19 pt-7 custom-poppins-font ">Customer Review</h1>
+            <h1 className="inter-font capitalize mb-4 text-4xl  md:text-5xl lg:text-6xl font-semibold leading-tight  text-[#0A1A2E] pt-8 px-4 ">Customer Review</h1>
 
             {/* custormer review box */}
             <div className="absolute top-0 left-0 w-full z-10 bg-white   ">
@@ -95,43 +95,43 @@ export default function Slider() {
 
                             </div>
                             {/* description */}
-                            <div className="max-w-[40vw]">
+                            <div className="lg:max-w-[40vw]">
                                 {/* rating */}
                                 <div className="flex justify-center items-center gap-4 pb-4">
                                     {
                                         Array.from({ length: 5 }).map((_, i) => (
-                                            <>
-                                                <div key={i} className="md:hidden">
+                                            <div key={i}>
+                                                <div className="md:hidden">
                                                     <StarIcon size={20} color={(i < customer.rating) ? "#31D2F2" : "#CDCDCD"} />
                                                 </div>
-                                                <div key={i} className="hidden md:block lg:hidden ">
+                                                <div className="hidden md:block lg:hidden ">
                                                     <StarIcon size={24} color={(i < customer.rating) ? "#31D2F2" : "#CDCDCD"} />
                                                 </div>
-                                                <div key={i} className="hidden lg:block xl:hidden ">
+                                                <div className="hidden lg:block xl:hidden ">
                                                     <StarIcon size={28} color={(i < customer.rating) ? "#31D2F2" : "#CDCDCD"} />
                                                 </div>
-                                                <div key={i} className="hidden xl:block ">
+                                                <div className="hidden xl:block ">
                                                     <StarIcon size={32} color={(i < customer.rating) ? "#31D2F2" : "#CDCDCD"} />
                                                 </div>
-                                            </>
+                                           </div>
+
                                         ))
                                     }
                                 </div>
                                 {/* reiview */}
-                                <p className="text-[#0A1A2E] text-lg md:text-[1.3125rem] lg:text-[1.5rem]  text-center pb-4 ">
-                                    <span className="inline-block md:hidden"><QutiationMark size={18} color="#0A1A2E" /></span>
+                                <p className="inter-font text-[#0A1A2E] text-lg md:text-[1.3125rem] lg:text-[1.5rem]  text-center pb-4 ">
+                                    <span className="inline-block md:hidden"><QutiationMark size={16} color="#0A1A2E" /></span>
                                     <span className="hidden md:inline-block lg:hidden"><QutiationMark size={21} color="#0A1A2E" /></span>
                                     <span className="hidden lg:inline-block "><QutiationMark size={24} color="#0A1A2E" /></span>
                                     {/* <span className="hidden xl:inline-block "><QutiationMark size={28} color="#0A1A2E" /></span> */}
                                     <span className="text-center"> {customer.review} </span>
-                                    <span className="inline-block md:hidden rotate-180"><QutiationMark size={18} color="#0A1A2E" /></span>
+                                    <span className="inline-block md:hidden rotate-180"><QutiationMark size={16} color="#0A1A2E" /></span>
                                     <span className="hidden md:inline-block lg:hidden rotate-180"><QutiationMark size={21} color="#0A1A2E" /></span>
                                     <span className="hidden lg:inline-block rotate-180"><QutiationMark size={24} color="#0A1A2E" /></span>
                                     {/* <span className="hidden xl:inline-block  rotate-180"><QutiationMark size={28} color="#0A1A2E" /></span> */}
 
                                 </p>
                                 {/* Name and Role */}
-                                <div className="text-[#0A1A2E] text-[15px] md:text-[18px] lg:text-[21px]  font-bold text-center flex gap-6 pb-4 justify-center"><span id="name">{customer.name}</span><span className="text-[13px] md:text-[15px] lg:text-[18px]  text-[#283357] font-semibold"><span id="designation">{customer.designation},</span><span id="company">{customer.company}</span></span></div>
                             </div>
                         </div>
 

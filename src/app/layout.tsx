@@ -28,8 +28,11 @@ export default function RootLayout({
     <html lang="en" >
       <head>
 
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Koras tech</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+
+
       </head>
 
       <body className="text-white bg-[#fff0]">

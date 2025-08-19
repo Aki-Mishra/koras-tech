@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import DownArrowicon from "../icons/DownArrowicon"
 import WhatWeDo from "./WhatWeDo"
 import { ActivityIcon } from "lucide-react"
@@ -12,26 +12,35 @@ const MobileMenu = () => {
     const [isOpen, setisOpen] = useState(false)
     const [open, setOpen] = useState(false)
     const [activeIndex, setActiveIndex] = useState(0)
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add("overflow-y-hidden");
+            document.body.classList.add("h-screen"); // instead of h-[100vh]
+        } else {
+            document.body.classList.remove("overflow-y-hidden");
+            document.body.classList.remove("h-screen");
+        }
+    }, [isOpen]);
 
     return (
         <div className="z-10 lg:hidden w-[100%] overflow-hidden   ">
             <div className="" onClick={() => { setisOpen(!isOpen) }}>
                 <HamBurgerMenu />
             </div>
-    
+
             {/* Cross Icon */}
 
 
             <div className={`z-30 custom-gradient-background-style py-2.5  md:py-8 px-4 md:px-12 absolute top-0 flex flex-col  ease-in-out duration-200 lg:hidden text-white h-full w-[100%] ${isOpen ? 'left-0' : "-left-[100%]"}`}>
-               
+
                 <div className="py-2.5 flex items-center justify-end" onClick={() => { setisOpen(!isOpen) }}>
                     <CloseMenu />
                 </div>
                 <div className="flex flex-col flex-1 w-full text-sm text-white my-12 px-1 justify-between ">
-                    <div className="flex flex-col gap-5  items-center justify-center w-[100%] ">
-                        <div className="flex gap-2 items-center justify-between w-[100%] relative font-semibold inter-font">
+                    <div className="flex flex-col gap-3  items-center justify-center w-[100%]  ">
+                        <div className="flex gap-2 items-center justify-between w-[100%] relative ">
 
-                            <Link href="/" className={` hover:bg-[#31D2F2] `}>
+                            <Link href="/" className={` hover:bg-[#31D2F2]  inter-font font-medium text-sm`}>
                                 What we do
                                 <span className={`ease-in duration-200 h-[1px] bg-[#fff] mt-0.5 block ${activeIndex === 1 ? "w-[100%]" : "w-0"}`}>
 
@@ -41,20 +50,20 @@ const MobileMenu = () => {
                                 <DownArrowicon height={18} width={18} color="white" />
                             </div>
                         </div>
-                        <div className="flex gap-2 items-center justify-between w-[100%] font-semibold inter-font">
-                            <Link href="/" className="hover:bg-[#31D2F2]  ">What we are</Link>
+                        <div className="flex gap-2 items-center justify-between w-[100%]">
+                            <Link href="/" className="hover:bg-[#31D2F2] inter-font font-medium text-sm  ">What we are</Link>
                             <div className="rotate-90" onClick={() => { setActiveIndex(2) }}>
                                 <DownArrowicon height={16} width={16} color="white" />
                             </div>
                         </div>
                         <div className="flex gap-2 items-center justify-between w-[100%]">
-                            <Link href="/" className="hover:bg-[#31D2F2] font-semibold inter-font ">Carrers</Link>
+                            <Link href="/" className="hover:bg-[#31D2F2]  inter-font font-medium text-sm ">Carrers</Link>
                             <div className="rotate-90" onClick={() => { setActiveIndex(3) }}>
                                 <DownArrowicon height={16} width={16} color="white" />
                             </div>
                         </div>
                         <div className="flex gap-2 items-center justify-between w-[100%] group">
-                            <Link href="/" className="group-[.group]:group  font-semibold inter-font">
+                            <Link href="/" className="group-[.group]:group  inter-font font-medium text-sm ">
                                 What we think
                                 <span className={`ease-in duration-200 h-[1px] bg-[#fff] mt-0.5 block group-hover:w-full w-0`}>
 
@@ -67,7 +76,7 @@ const MobileMenu = () => {
 
                         <div className="flex gap-2 items-center justify-between w-[100%]">
 
-                            <Link href="/" className="hover:bg-[#31D2F2] inter-font font-semibold text-sm  inter-font ">Careers</Link>
+                            <Link href="/" className="hover:bg-[#31D2F2]  inter-font font-medium text-sm  ">Careers</Link>
 
                         </div>
 
@@ -83,7 +92,7 @@ const MobileMenu = () => {
                         <DownArrowicon height={20} width={20} color="white" />
                     </div>
                     <div className="">
-                        <p className="custom-poppins-font ">Back</p>
+                        <p className="inter-font font-semibold text-base">Back</p>
                     </div>
 
                 </div>

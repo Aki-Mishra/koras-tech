@@ -38,7 +38,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
 // Project data can be easily managed in this array
 const projectsData: Project[] = [
- 
+
   {
     id: 1,
     title: 'Financial Analytics Dashboard',
@@ -67,7 +67,7 @@ const projectsData: Project[] = [
     imageUrl: 'https://plus.unsplash.com/premium_photo-1661762833325-9b7e1c0b4abf?q=80&w=2110&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     link: '#',
   },
-  
+
 ];
 
 const Projects = () => {
@@ -88,22 +88,22 @@ const Projects = () => {
     <div className="bg-white text-gray-800 font-inter">
       <section id="projects" className="py-8 md:py-12 lg:py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-       {/* top section for heading and description */}
-        <div className="mb-12 flex flex-col md:flex-row  md:gap-20">
-          {/* heading section */}
-          <div className="mb-4">
-            <h5 className="uppercase mb-4 text-[17px] leading-4">What we done</h5>
-            <h1 className="custom-times-new-roman-font capitalize mb-4 text-[4rem] font-extrabold leading-12 custom-neavy-blue-font">Our Projects</h1>
+          {/* top section for heading and description */}
+          <div className="mb-12 flex flex-col md:flex-row  md:gap-20">
+            {/* heading section */}
+            <div className="mb-4">
+              <h5 className="uppercase mb-4 text-[17px] leading-4 inter-font">What we done</h5>
+              <h1 className="custom-times-new-roman-font capitalize mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight custom-neavy-blue-font">Our Projects</h1>
+            </div>
+            {/* description section */}
+            <div className="">
+              <p className="text-sm sm:text-base md:text-lg leading-relaxed ">We provide complete tech solutions — from app development and management to website design and UI/UX services. Whether you're starting fresh or scaling up, we deliver smart, reliable, and modern digital solutions tailored to your needs.</p>
+            </div>
           </div>
-          {/* description section */}
-          <div className="">
-            <p className="text-[1rem] font-light ">We provide complete tech solutions — from app development and management to website design and UI/UX services. Whether you're starting fresh or scaling up, we deliver smart, reliable, and modern digital solutions tailored to your needs.</p>
-          </div>
-        </div>
           <div className="relative">
             <div
               ref={sliderRef}
-              className="flex overflow-x-hidden gap-8 pb-4"
+              className="flex overflow-x-hidden gap-8 pb-4 inter-font"
             >
               {projectsData.map((project) => (
                 <ProjectCard key={project.id} project={project} />

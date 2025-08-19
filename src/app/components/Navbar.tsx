@@ -6,7 +6,7 @@ import Link from "next/link"
 import DownArrowicon from "../icons/DownArrowicon"
 const Navbar = () => {
     return (
-        <div className="bg-white   z-10  flex items-center justify-end  lg:px-0 lg:pt-0 py-2.5 custom-poppins-font lg:h-[72px]   ">
+        <div className="bg-white   z-10  flex items-center justify-end  lg:px-0 lg:pt-0  custom-poppins-font lg:h-[72px]   ">
             {/* left */}
             <div className="hidden  md:hidden items-center bg-white pl-7 md:pl-9 lg:pl-19 lg:w-[20%] lg:h-full">
                 <KorasLogo height={40} width={82} color="white" />
