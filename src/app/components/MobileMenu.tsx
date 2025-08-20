@@ -14,14 +14,22 @@ const MobileMenu = () => {
     const [activeIndex, setActiveIndex] = useState(0)
     useEffect(() => {
         if (isOpen) {
-            document.body.classList.add("overflow-y-hidden");
-            document.body.classList.add("h-screen"); // instead of h-[100vh]
+            // Store the scroll position
+            const scrollY = window.scrollY;
+            document.body.style.position = "fixed";
+            document.body.style.top = `-${scrollY}px`;
+            document.body.style.left = "0";
+            document.body.style.right = "0";
         } else {
-            document.body.classList.remove("overflow-y-hidden");
-            document.body.classList.remove("h-screen");
+            // Restore scroll position
+            const scrollY = Math.abs(parseInt(document.body.style.top || "0"));
+            document.body.style.position = "";
+            document.body.style.top = "";
+            document.body.style.left = "";
+            document.body.style.right = "";
+            window.scrollTo(0, scrollY);
         }
     }, [isOpen]);
-
     return (
         <div className="z-10 lg:hidden w-[100%] overflow-hidden   ">
             <div className="" onClick={() => { setisOpen(!isOpen) }}>

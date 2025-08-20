@@ -69,7 +69,3 @@ const WhatWeDo = () => {
 
 export default WhatWeDo
 
-// Things to attach
-// linkedin
-// Facebook
-// twitter

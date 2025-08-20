@@ -9,10 +9,10 @@ const Footer = () => {
       <div className="bg-black px-9 pb-10  pt-10 md:pt-[100px] lg:pt-30 lg:px-16 xl:px-28">
         <div className="pb-10 flex lg:flex-row gap-9 lg:gap-0 flex-col lg:pb-20">
           <div className="lg:hidden md:pb-12">
-            <KorasLogo height={70} width={150} color="white" />
+            <KorasLogo size={70} color="white" />
           </div>
           <div className="hidden lg:block w-[40%]">
-            <KorasLogo height={80} width={170} color="white" />
+            <KorasLogo size={80}  color="white" />
           </div>
           <div className="text-xl md:pb-20 md:text-5xl lg:text-[45px]  flex justify-center items-center lg:flex-1">
             <p className="font-medium">We craft scalable digital solutions that help businesses grow, innovate, and stay ahead in a fast-changing world</p>

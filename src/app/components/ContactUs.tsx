@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import DownArrowicon from "../icons/DownArrowicon";
-
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -90,18 +89,17 @@ const ContactUs = () => {
               </div>
               <div className="w-full pt-[1.85rem] relative group">
                 <select name="jobTitle" className="peer border-b-2 w-full py-[0.375rem] text-[1rem] outline-none h-10" value={formData.jobTitle} onChange={handleChange} required>
-                  <option value="" className="text-[#0A1A2E]"></option>
+                  <option value=""></option>
                   <option value="Startup Founders" className="text-[#0A1A2E]">Startup Founders</option>
-                  <option value="Product Managers" className="text-[#0A1A2E]">Product Managers</option>
-                  <option value="Project Managers" className="text-[#0A1A2E]">Project Managers</option>
-                  <option value="Operations Managers" className="text-[#0A1A2E]">Operations Managers</option>
-                  <option value="Business Analysts" className="text-[#0A1A2E]">Business Analysts</option>
-                  <option value="CEOs / CTOs" className="text-[#0A1A2E]">CEOs / CTOs</option>
-                  <option value="Digital Transformation Leads" className="text-[#0A1A2E]">Digital Transformation Leads</option>
-                  <option value="Others" className="text-[#0A1A2E]">Others</option>
-
+                  <option value="Product Managers" className="text-[#0A1A2E]" >Product Managers</option>
+                  <option value="Project Managers" className="text-[#0A1A2E]" >Project Managers</option>
+                  <option value="Operations Managers" className="text-[#0A1A2E]" >Operations Managers</option>
+                  <option value="Business Analysts" className="text-[#0A1A2E]" >Business Analysts</option>
+                  <option value="CEOs / CTOs" className="text-[#0A1A2E]" >CEOs / CTOs</option>
+                  <option value="Digital Transformation Leads" className="text-[#0A1A2E]" >Digital Transformation Leads</option>
+                  <option value="Others" className="text-[#0A1A2E]" >Others</option>
                 </select>
-                <p className="peer-focus:top-[12px] peer-user-valid:top-[12px] top-[calc(100%-31px)] capitalize absolute left-0 text-[1rem] ease-in duration-200">Job Title</p>
+                <label className="peer-focus:top-[12px] peer-user-valid:top-[12px] top-[calc(100%-31px)] capitalize absolute left-0 text-[1rem] ease-in duration-200">Job Title</label>
               </div>
             </div>
 
@@ -136,7 +134,7 @@ const ContactUs = () => {
                   <option value="Others" className="text-[#0A1A2E]">Other</option>
 
                 </select>
-                <p className="peer-focus:top-[12px] peer-user-valid:top-[12px] top-[calc(100%-31px)] capitalize absolute left-0 text-[1rem] ease-in duration-200">Industry</p>
+                <label className="peer-focus:top-[12px] peer-user-valid:top-[12px] top-[calc(100%-31px)] capitalize absolute left-0 text-[1rem] ease-in duration-200">Industry</label>
               </div>
             </div>
 
@@ -180,7 +178,7 @@ const ContactUs = () => {
                   <option value="Other" className="text-[#0A1A2E]">Other</option>
 
                 </select>
-                <p className="peer-focus:top-[12px] peer-user-valid:top-[12px] top-[calc(100%-31px)] capitalize absolute left-0 text-[1rem] ease-in duration-200">How we can help you</p>
+                <label className="peer-focus:top-[12px] peer-user-valid:top-[12px] top-[calc(100%-31px)] capitalize absolute left-0 text-[1rem] ease-in duration-200">How we can help you</label>
               </div>
             </div>
 

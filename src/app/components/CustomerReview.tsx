@@ -78,7 +78,7 @@ export default function Slider() {
     };
 
     return (
-        <div className="relative flex   w-full overflow-hidden bg-[linear-gradient(to_bottom,rgba(49,210,242,0.1)_75%,rgba(49,210,242,0.3)_100%)] lg:bg-[linear-gradient(to_bottom,rgba(49,210,242,0.12)_0%,rgba(49,210,242,0.12)_80%,rgba(49,210,242,0.3)_100%)] h-[670px] md:h-[875px] lg:h-[900px] max-h-[100vh] " id="customer-review">
+        <div className="relative flex   w-full overflow-hidden bg-[linear-gradient(to_bottom,rgba(49,210,242,0.1)_75%,rgba(49,210,242,0.3)_100%)] h-[670px] md:h-[875px] lg:h-[900px] max-h-[100vh] " id="customer-review">
             <h1 className="inter-font capitalize mb-4 text-4xl  md:text-5xl lg:text-6xl font-semibold leading-tight  text-[#0A1A2E] pt-8 px-4 ">Customer Review</h1>
 
             {/* custormer review box */}

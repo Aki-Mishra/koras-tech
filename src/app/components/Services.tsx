@@ -30,7 +30,7 @@ const Services = () => {
                     <div className="pt-6 border-b border-[#a0a7ae]">
                         <p className="text-lg sm:text-xl font-bold w-fit group custom-neavy-blue-font">
                             Application Development and Maintenance
-                            <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
+                            <span className="block ease-out duration-200 w-0 lg:group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
                         </p>
                         <p className="text-sm sm:text-base font-light mb-3">
                             Building and maintaining reliable applications to support your
@@ -41,7 +41,7 @@ const Services = () => {
                     <div className="pt-6 border-b border-[#a0a7ae]">
                         <p className="text-lg sm:text-xl font-bold w-fit group custom-neavy-blue-font">
                             IT Services & Consulting
-                            <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
+                            <span className="block ease-out duration-200 w-0 lg:group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
                         </p>
                         <p className="text-sm sm:text-base font-light mb-3">
                             Expert IT solutions and strategic consulting to drive business
@@ -52,7 +52,7 @@ const Services = () => {
                     <div className="pt-6 border-b border-[#a0a7ae]">
                         <p className="text-lg sm:text-xl font-bold w-fit group custom-neavy-blue-font">
                             Cloud Solutions
-                            <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
+                            <span className="block ease-out duration-200 w-0 lg:group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
                         </p>
                         <p className="text-sm sm:text-base font-light mb-3">
                             Scalable and secure cloud services for modern business needs.
@@ -62,7 +62,7 @@ const Services = () => {
                     <div className="pt-6 border-b border-[#a0a7ae]">
                         <p className="text-lg sm:text-xl font-bold w-fit group custom-neavy-blue-font">
                             Cybersecurity Services
-                            <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
+                            <span className="block ease-out duration-200 w-0 lg:group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
                         </p>
                         <p className="text-sm sm:text-base font-light mb-3">
                             Protecting your digital assets with advanced security solutions.
@@ -72,7 +72,7 @@ const Services = () => {
                     <div className="pt-6 border-b border-[#a0a7ae]">
                         <p className="text-lg sm:text-xl font-bold w-fit group custom-neavy-blue-font">
                             Data Analytics & Insights
-                            <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
+                            <span className="block ease-out duration-200 w-0 lg:group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
                         </p>
                         <p className="text-sm sm:text-base font-light mb-3">
                             Turning data into actionable business intelligence.
@@ -82,7 +82,7 @@ const Services = () => {
                     <div className="pt-6 border-b border-[#a0a7ae]">
                         <p className="text-lg sm:text-xl font-bold w-fit group custom-neavy-blue-font">
                             UI/UX Design
-                            <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
+                            <span className="block ease-out duration-200 w-0 lg:group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
                         </p>
                         <p className="text-sm sm:text-base font-light mb-3">
                             Creating intuitive and engaging user experiences.
@@ -92,7 +92,7 @@ const Services = () => {
                     <div className="pt-6 border-b border-[#a0a7ae]">
                         <p className="text-lg sm:text-xl font-bold w-fit group custom-neavy-blue-font">
                             E-commerce Development
-                            <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
+                            <span className="block ease-out duration-200 w-0 lg:group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
                         </p>
                         <p className="text-sm sm:text-base font-light mb-3">
                             Building powerful online stores for seamless shopping experiences.
@@ -102,7 +102,7 @@ const Services = () => {
                     <div className="pt-6 border-b border-[#a0a7ae]">
                         <p className="text-lg sm:text-xl font-bold w-fit group custom-neavy-blue-font">
                             Internet of Things (IoT)
-                            <span className="block ease-out duration-200 w-0 group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
+                            <span className="block ease-out duration-200 w-0 lg:group-hover:w-full h-0.5 bg-[#0A1A2E]"></span>
                         </p>
                         <p className="text-sm sm:text-base font-light mb-3">
                             Connecting devices to enable smart, data-driven operations.
